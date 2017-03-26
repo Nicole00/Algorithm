@@ -1,33 +1,27 @@
 # Algorithm 算法的实现代码
-**KNN.py**
-
+***1、KNN***
   KNN是K近邻算法，数据挖掘类的。代码采用了网络公开数据集鸢尾花（具体可google），名字是Iris.csv。
   
-  **WordCloud.py**
-  
+  ***2、WordCloud***
   python的词云，数据采用一个公众号里的内容，文件为wordcloud.txt。
   
-  
-  **BinarySearch.py**
-  
+  ***3、BinarySearch.py***
   二分查找算法，采用了循环和递归两种实现。
   
   
-  **QuickSort.py**
-  
+  ***4、QuickSort.py***
   快速排序算法。
   
   
-  **SearchSubTree**
-  
+  ***5、SearchSubTree.py***
   给定两颗树，查找其中一棵树是否为另一颗树的子树，递归实现。
   
-  **ListNodesMerge**
-  
+  ***6、ListNodesMerge.py***
   将两个有序链表融合为一个链表，合并之后的新链表也是有序的。
   
-  **VerifySquenceOfBST**
-  
+  ***7、VerifySquenceOfBST.py***
   给定一个整数序列，判断该序列是否为某一颗二叉搜索树的后序遍历序列。（要清楚二叉搜索树的特性：左孩子<根节点<右孩子）
   
+  ***8、MoveGirlsBoys.py***
+  男孩女孩排队站，要尽量使男孩与女孩接触的少，每次只能移动一次，只能跟邻居小孩交换，求需要的最少移动次数。（为使男孩女孩接触最少，则男孩都在左边或者女孩都在左边。每次只移动一次转换为冒泡排序的思想。）
   
