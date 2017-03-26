@@ -28,11 +28,12 @@ def VerifySquenceOfBST(squence, length):
 
     #判断右子树序列是否是二叉搜索树
     right = True
-    if i<length-1:
-        sub_squence = []
-        for k in range(i,length):
-            sub_squence.append(squence[k])
-        right = VerifySquenceOfBST(sub_squence, length-1-i)
+    if i < length-1:
+        right = VerifySquenceOfBST(squence[i:length-1], length - 1 - i)       #强大的python，squence[i:length-1]就实现了下面四行代码，取第i到第length-1个元素作为新list
+        #sub_squence = []
+        #for k in range(i,length):
+            #sub_squence.append(squence[k])
+        #right = VerifySquenceOfBST(sub_squence, length-1-i)
 
     return (left and right)
 
