@@ -74,3 +74,8 @@
   ***17、PermutationString.py***
   
   将字符串全排列打印，输入的字符串在list中。
+  
+  ***18、K-means***
+  
+  K-means是K聚类算法。代码采用了网络公开数据集鸢尾花（具体可google），名字是Iris.csv。
+  
