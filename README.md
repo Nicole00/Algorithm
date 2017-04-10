@@ -70,3 +70,7 @@
   ***16、Print1ToMaxOfNDigits.py***
   
   打印1到最大的n位数。
+  
+  ***17、PermutationString.py***
+  
+  将字符串全排列打印，输入的字符串在list中。
