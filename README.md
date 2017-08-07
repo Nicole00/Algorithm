@@ -80,19 +80,25 @@
   K-means是K聚类算法。代码采用了网络公开数据集鸢尾花（具体可google），名字是Iris.csv。
 
   ***19、AdjustArray.java***
+
   对数组中的数据进行调整，奇数在左偶数在右。
 
   ***20、FindEntryOfLoop.java***
+
   在链表中寻找环的入口节点。
 
   ***21、FindNumbersWithSum.java***
+
   在数组中查找和为给定值的数据的组合（数组中元素可以重复使用）。
 
   ***22、GetLeastNumbers.java***
+
   在数组中提取最小的k个元素。
 
   ***23、Power.java***
+
   用位操作实现数据的幂运算。
 
   ***24、ReverseList.java***
+
   反转链表。
