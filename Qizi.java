@@ -1,3 +1,4 @@
+package Test;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -38,13 +39,15 @@ public class Qizi {
     }
 
     public static int sum(int n, int k, int[] x, int[] y){         //穷举中心点
-        int[] sums = new int[n*n];
+        int x_len = max(x) + 1;
+        int y_len = max(y) + 1;
+        int[] sums = new int[x_len * y_len];
         int count = 0;
-        for(int i=0; i<n; i++){
-            for(int j=0; j<n; j++){           //最外两层用于找到每个中心点的坐标
+        for(int i=0; i<x_len; i++){
+            for(int j=0; j<y_len; j++){           //最外两层用于找到每个中心点的坐标
                 int[] array = new int[n];      //存放每个棋子格子与中心点的距离
                 for(int l=0; l<n; l++){
-                    array[l] = Math.abs(x[l] - i) + Math.abs(y[l] - j);
+                    array[l] = Math.abs(x[l] - i) + Math.abs(y[l] - j); //求点（x,y）与中心点的距离
                 }
                 Arrays.sort(array);            //array存放的n个棋子分别到中心点的距离，对其进行排序，取最小的k个相加
                 sums[count] = SUM(array, k);
@@ -53,6 +56,16 @@ public class Qizi {
         }
         Arrays.sort(sums);
         return sums[0];
+    }
+
+    public static int max(int [] a){
+        int len = a.length;
+        int max = 0;
+        for(int i=0; i<len; i++){
+            if(max < a[i])
+                max = a[i];
+        }
+        return max;
     }
 
     public static int SUM(int[] array, int k){
